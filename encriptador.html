@@ -5,29 +5,42 @@
   <meta charset="UTF-8">
   <title>Encriptador</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   
 
   <main class="main">
-	<section class="form box">
+	<div class="input">
+		<img src="img/Logo.png" alt="">
+		<section class="form box">
 	
-	  <form action="">
-		<label>Sólo letras minúsculas, sin acento</label>
-		<input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
-		<input class="boton" type="button" value="Encriptar!" id="btn-encriptar">
-		<input class="boton" type="button" value="Desencriptar!" id="btn-desencriptar">
-	  </form>
-	  
-	</section>
-  
-	<section class="msg box">
+			<form action="">
+			 
+			  <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">
+			  <div class="advertencia">
+				<img src="img/Vector.png" alt="">
+				<label>Sólo letras minúsculas, sin acento</label>
+			</div>
+			  <input class="boton" type="button" value="Encriptar!" id="btn-encriptar">
+			  <input class="boton" type="button" value="Desencriptar!" id="btn-desencriptar">
+			</form>
+		
+		  </section>
+	</div>
+
+	<div class="output">
+		<img src="img/Muñeco.png">
+		<section class="msg box">
 	 
-	  <input class="text-input-salida" type="text" id="msg">
-	  <input class="boton" type="button" value="Copiar" id="btn-copy">
-	</section>
+			<input class="text-input-salida" type="text" id="msg">
+			<input class="boton" type="button" value="Copiar" id="btn-copy">
+		</section> 
+	</div>
+	
+  
+	
 	
   </main>
 

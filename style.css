@@ -1,0 +1,331 @@
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+
+body {
+    background-color: #FFF;
+}
+
+
+main {
+    display: flex;
+    height: 100vh;
+  
+    background: #F3F5FC;
+} 
+
+.logo img{
+    height: 48px;
+    width: 120px;
+    padding: 40px 0 0 40px;
+}
+
+.ingreso-palabra{
+    width : 57.5%
+}
+
+
+.input-texto {
+    margin-top: 155px;
+    width: 80%;
+    margin-left: 5%;
+    border-style: none;
+    background:#F3F5FC;
+    resize: none;
+    
+}
+
+::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    
+  }
+
+.informacion{
+    display: inline;
+
+}
+
+.mensaje {
+    position: relative;
+    margin-top: 20px;
+    background-image: url("imagenes/muneco.png");
+    background-repeat: no-repeat;
+    background-position: 18px;
+    background-size: 220px auto;
+    border-style:none;
+    margin-left: 20px;
+    resize: none;
+    background-color: white;
+    height: 300px;
+}
+
+
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    
+ 
+}
+
+.encriptar {
+    background-color: darkblue;
+    color:white;
+    height: 62px;
+    border-radius: 24px;
+    width: 32.8%;
+    margin-left: 5%;
+    font-size: 16px;
+    border: 1px solid #0A3871;
+}
+
+.encriptar:hover{
+background: #072B61;
+}
+
+.desencriptar {
+    margin-left: 30px;
+    height: 62px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    width: 32.8%;
+    font-size: 16px;
+    color: #0A3871;
+}
+
+.desencriptar:hover{
+background: #EFF1FA;
+}
+
+.advertencia{
+    margin-left: 5%;
+    margin-top: 100px;
+}
+
+.logo-adv{
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    width: 16px;
+    height: 16px;
+ 
+    
+}
+
+.informacion {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+
+    
+}
+
+.mensaje-box{
+    width: 320px;
+    height: 90%;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    margin-top:40px;
+    margin-right:40px;
+    
+}
+.mensaje-grande{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    margin-bottom: 20px;
+}
+
+.mensaje-chico{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    padding: 0 10px;
+}
+
+
+.copiar{
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 80%;
+    height: 62px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    position: relative;
+    margin: 20px auto;
+  /*   margin-top: 10px;
+    margin-left: 25%; */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    margin-top: 150px;
+}
+
+/*                          Dimensiones tablet       */
+
+
+@media screen and (max-width:768px){
+/*     html {
+        height: 100%;
+    }
+    body {
+        min-height: 100%;
+    } */
+
+
+
+.logo{
+    width:40px;
+ 
+}
+
+.logo img{
+    padding: 40px 0 0 10px;
+} 
+
+main{
+    display: block;
+  overflow: auto;
+}
+
+.input-texto{
+    width: 80vw;
+    height: 20%;
+}
+
+.ingreso-palabra {
+    width: 100vw;
+    height: 70%;
+}
+
+.botones{
+    display: block;
+
+}
+
+.advertencia{
+     margin-top: 33%; 
+
+}
+
+.botones{
+
+    width: 97vw;
+    margin: 28px auto;
+}
+
+.encriptar, .desencriptar{
+    
+     width:41.9%; 
+    margin-right: 20px;
+}
+
+.mensaje-box{
+    width: 80%;
+   /*  height:11.32%; */
+    margin: 15px auto;
+  
+ /*    height: 20vh; */
+ 
+}
+
+.mensaje{
+    display: block;
+    background-image: none;
+     height: auto; 
+    width: 80%;
+  /*   line-height: 0; */
+    font-size: 24px;
+    min-height: 10px;
+}
+
+.mensaje-box{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.mensaje-box p{
+    margin: 5px auto;
+}
+
+.copiar{
+    margin-top:10px;
+}
+
+}
+
+/*                          Dimensiones celular       */
+
+
+@media screen and (max-width:450px){
+
+.ingreso-palabra {
+    width: 100vw;
+    height: 60%;
+}
+.logo img{
+    padding: 30px 0 0 0px;
+    height: 40px;
+    width: 100px;
+} 
+
+.input-texto{
+    font-size: 27px;
+    margin-top: 70px;
+}
+
+::placeholder {
+    font-size: 27px;
+}
+
+.advertencia{
+    margin: 80px  auto 0;
+    width: 90%;
+}
+
+.botones {
+    width: 90%;
+    margin: 0 auto;
+}
+.encriptar, .desencriptar{
+    
+    width:90%; 
+   
+    margin: 10px auto;
+}
+
+
+
+}
